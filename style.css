@@ -1,0 +1,86 @@
+.navtitle {
+    display: flex;
+    justify-content: center;
+    font-display: inherit;
+    background: blue;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    border: 2px solid red;
+    position: relative;
+    top: 50px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+
+
+.chicken {
+    width: 370px;
+    height: 170px;
+    float: left;
+}
+.chicken p{
+    background: yellow;
+}
+
+.beef {
+    width: 370px;
+    height: 170px;
+    float: left;
+    padding: 0px;
+    margin-left: 5px;
+}
+.beef p{
+    background: darkgoldenrod;
+    color: rgb(255, 255, 255);
+}
+
+.shusi {
+    width: 370px;
+    height: 170px;
+    display:inline-block;
+}
+.shusi p{
+    background: darkkhaki;
+}
+
+
+@media only screen and (max-width:1181px){
+    .beef{
+        float: right;
+    }
+    .shusi {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width:809px){
+    .chicken{
+        width: 100%;
+        margin-left:0 ;
+        padding: 0px;
+        float: left;
+        display: inline-block;   
+        margin-left: -20px;
+    }
+    .beef{
+        width: 100%;
+        margin-top: 5px;
+        float: left;
+        margin-left: -20px;
+    }
+    .shusi {
+        display: inline-block;   
+        margin-left: -35px;
+    }
+}
